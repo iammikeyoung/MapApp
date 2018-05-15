@@ -12,6 +12,7 @@
 		A2D2A16220AB56CA00CB0971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D2A16020AB56CA00CB0971 /* Main.storyboard */; };
 		A2D2A16420AB56CB00CB0971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D2A16320AB56CB00CB0971 /* Assets.xcassets */; };
 		A2D2A16720AB56CB00CB0971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D2A16520AB56CB00CB0971 /* LaunchScreen.storyboard */; };
+		A2D2A17020AB5C9D00CB0971 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D2A16F20AB5C9D00CB0971 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A2D2A16320AB56CB00CB0971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2D2A16620AB56CB00CB0971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2D2A16820AB56CB00CB0971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D2A16F20AB5C9D00CB0971 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D2A17020AB5C9D00CB0971 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				A2D2A15B20AB56CA00CB0971 /* MapApp */,
 				A2D2A15A20AB56CA00CB0971 /* Products */,
+				A2D2A16E20AB5C9D00CB0971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				A2D2A16820AB56CB00CB0971 /* Info.plist */,
 			);
 			path = MapApp;
+			sourceTree = "<group>";
+		};
+		A2D2A16E20AB5C9D00CB0971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2D2A16F20AB5C9D00CB0971 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					A2D2A15820AB56CA00CB0971 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
